@@ -16,7 +16,7 @@
 		<servlet-name>springmvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	<!-- -->
+
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.png</url-pattern>
@@ -28,3 +28,4 @@
 		<welcome-file>/WEB-INF/views/index.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
+<!-- -->
