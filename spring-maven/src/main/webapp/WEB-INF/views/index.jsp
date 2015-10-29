@@ -10,7 +10,7 @@
 <link rel="icon" href="">
 <link href="./resources/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
-<title>Index 2</title>
+<title>Index</title>
 </head>
 <body>
 
