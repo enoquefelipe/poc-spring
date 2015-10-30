@@ -34,6 +34,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="olaMundo">Olá Mundo</a></li>
 							<li><a href="templateMaster">Master</a></li>
+							<li><a href="paginaCadastraUsuario">Cadastra Usuário</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#">Opção 2</a></li>
 						</ul></li>

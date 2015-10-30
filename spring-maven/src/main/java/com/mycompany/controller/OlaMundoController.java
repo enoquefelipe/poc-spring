@@ -20,6 +20,11 @@ public class OlaMundoController {
 	@RequestMapping("templateMaster")
 	public String master() {
 		System.out.println("Não achei caraiii!");
-		return "master";
+		return "template/master";
+	}
+	
+	@RequestMapping("paginaCadastraUsuario")
+	public String cadastraUsuario() {
+		return "cadastra-usuario";
 	}
 }
