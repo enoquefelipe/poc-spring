@@ -34,7 +34,7 @@
 			<version>3.2.13.RELEASE</version>
 		</dependency>
 		
-		<!-- 
+		<!-- -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-core</artifactId>
@@ -64,9 +64,9 @@
 			<artifactId>tiles-template</artifactId>
 			<version>2.2.0</version>
 		</dependency>
-		-->
 		
-		<!-- Tiles dependencias -->
+		
+		<!-- Tiles dependencias 
 		
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
@@ -97,7 +97,7 @@
 			<artifactId>tiles-template</artifactId>
 			<version>2.2.2</version>
 		</dependency>
-
+		-->
 		<!-- 
 		<dependency> 
 			<groupId>org.apache.tiles</groupId> 

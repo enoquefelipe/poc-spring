@@ -4,9 +4,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
+<link href="./resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<tiles:insertAttribute name="menu" />
+<div class="container">
+	<tiles:insertAttribute name="header" />
+	<tiles:insertAttribute name="body" />
 	<tiles:insertAttribute name="footer" />
+</div>
 </body>
 </html>

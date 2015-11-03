@@ -3,6 +3,8 @@ package com.mycompany.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.mycompany.entity.Pessoa;
+
 @Controller
 public class OlaMundoController {
 
@@ -19,12 +21,18 @@ public class OlaMundoController {
 	
 	@RequestMapping("templateMaster")
 	public String master() {
-		System.out.println("Não achei caraiii!");
-		return "template/master";
+		System.out.println("Não achei o master");
+		return "porra";
 	}
 	
 	@RequestMapping("paginaCadastraUsuario")
-	public String cadastraUsuario() {
+	public String paginaCadastraUsuario() {
 		return "cadastra-usuario";
+	}
+	
+	@RequestMapping("/cadUser")
+	public String cadastra(Pessoa pessoa) {
+		System.out.println(pessoa.getNome());
+		return "index";
 	}
 }

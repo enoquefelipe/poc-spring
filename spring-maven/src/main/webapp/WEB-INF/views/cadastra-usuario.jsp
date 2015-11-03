@@ -1,58 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="icon" href="">
-<link href="./resources/css/bootstrap.min.css" rel="stylesheet"
-	type="text/css" />
-<title>Index</title>
-</head>
-<body>
+	<h2>Cadastro de Usu�rio</h2>
 
-	<div class="container">
-
-		<!-- Static navbar -->
-		<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				 <span class="icon-bar"></span> <span class="icon-bar"></span> 
-				 <span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Spring Web MVC</a>
+	<form class="form-horizontal" action="cadUser" method="GET">
+		<div class="form-group">
+			<label for="" class="col-sm-2 control-label">Nome</label>
+			<div class="col-sm-8">
+				<input name="nome" type="text" class="form-control" id="" placeholder="Nome...">
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index">Home</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opções<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="olaMundo">Olá Mundo</a></li>
-							<li><a href="templateMaster">Master</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Opção 2</a></li>
-						</ul></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Sair</a></li>
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
 		</div>
-		<!--/.container-fluid --> </nav>
-
-		<div>
-			<h2>Cadastro de Usário!</h2>
+		
+		<div class="form-group">
+			<label for="" class="col-sm-2 control-label">CPF</label>
+			<div class="col-sm-4">
+				<input name="cpf" type="text" class="form-control" id="" placeholder="CPF...">
+			</div>
 		</div>
 
-	</div>
-
-	<script src="./resources/js/jquery-min.js"></script>
-	<script src="./resources/js/bootstrap.min.js"></script>
-</body>
-</html>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default">Enviar</button>
+			</div>
+		</div>
+	</form>
