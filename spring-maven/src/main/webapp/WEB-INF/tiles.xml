@@ -18,14 +18,15 @@
 
 	<definition name="cadastra-usuario" extends="new.definition">
 		<put-attribute name="title" value="Cadastra de Usuario" />
-		<put-attribute name="body" value="/WEB-INF/views/cadastra-usuario.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/cadastra-usuario.jsp" />
 	</definition>
 
 	<definition name="sucesso" extends="new.definition">
 		<put-attribute name="title" value="Sucesso" />
 		<put-attribute name="body" value="/WEB-INF/views/sucesso.jsp" />
 	</definition>
-	
+
 	<definition name="master" extends="new.definition">
 		<put-attribute name="title" value="Template" />
 		<put-attribute name="body" value="/WEB-INF/views/template/master.jsp" />

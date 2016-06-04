@@ -8,10 +8,10 @@
 <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="container">
-	<tiles:insertAttribute name="header" />
-	<tiles:insertAttribute name="body" />
-	<tiles:insertAttribute name="footer" />
-</div>
+	<div class="container">
+		<tiles:insertAttribute name="header" />
+		<tiles:insertAttribute name="body" />
+		<tiles:insertAttribute name="footer" />
+	</div>
 </body>
 </html>
