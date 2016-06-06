@@ -1,7 +1,7 @@
 
-<h2>Cadastro de Usu·rio</h2>
+<h2>Cadastro de Usu√°rio</h2>
 
-<form class="form-horizontal" action="cadUser" method="GET">
+<form class="form-horizontal" action="#" method="GET">
 	<div class="form-group">
 		<label for="" class="col-sm-2 control-label">Nome</label>
 		<div class="col-sm-8">
