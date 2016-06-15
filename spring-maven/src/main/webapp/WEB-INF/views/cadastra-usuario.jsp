@@ -1,18 +1,17 @@
-
-<h2>Cadastro de Usu√°rio</h2>
+<h2>Cadastro de Usu·rio</h2>
 
 <form class="form-horizontal" action="#" method="GET">
 	<div class="form-group">
 		<label for="" class="col-sm-2 control-label">Nome</label>
 		<div class="col-sm-8">
-			<input name="nome" type="text" class="form-control" id="" placeholder="Nome...">
+			<input name="nome" type="text" class="form-control" id="" placeholder="Nome..." required="required">
 		</div>
 	</div>
 
 	<div class="form-group">
 		<label for="" class="col-sm-2 control-label">CPF</label>
 		<div class="col-sm-4">
-			<input name="cpf" type="text" class="form-control" id="" placeholder="CPF...">
+			<input name="cpf" class="form-control" id="cpf" placeholder="CPF..." required="required">
 		</div>
 	</div>
 

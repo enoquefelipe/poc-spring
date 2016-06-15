@@ -1,4 +1,8 @@
 <hr>
 <script src="./resources/js/jquery-min.js"></script>
-<script src="./resources/js/bootstrap.min.js"></script>
-<p>Copyright &copy; eleal</p>
+<script src="./resources/js/bootstrap.js"></script>
+<script src="./resources/js/inputmask.js"></script>
+<script src="./resources/js/script.js"></script>
+<div class="center">
+	<p>Copyright &copy; eleal</p>
+</div>
