@@ -32,5 +32,4 @@ public class OlaMundoController {
 	public String cadastrar(Pessoa pessoa) {
 		return "index";
 	}
-
 }

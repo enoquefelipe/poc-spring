@@ -1,4 +1,4 @@
 /spring-maven/
 
 # Ignorar target
-/target/*
+target/
