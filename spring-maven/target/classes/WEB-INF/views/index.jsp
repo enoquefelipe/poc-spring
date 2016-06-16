@@ -3,9 +3,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 <title>Index</title>
 </head>
 <body>
-	<h1>Home page</h1>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Welcome</h1>
+			<p>Welcome to aplication with Spring Web MVC.</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="index">Começar</a>
+			</p>
+		</div>
+	</div>
 </body>
 </html>
