@@ -1,4 +1,14 @@
 /spring-maven/
 
-# Ignorar target
+*.class
+.DS_Store
+Servers/*
+.metadata
+.settings
+.classpath
+.project
 target/
+bin/
+rebel.xml
+.mvn*
+mvnw*
