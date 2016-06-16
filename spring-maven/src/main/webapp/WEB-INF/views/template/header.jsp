@@ -9,17 +9,19 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index">Home</a></li>
+				<li><a href="index">Início</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opções<span
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="olaMundo">Olá Mundo</a></li>
+						<li><a href="cadastraUsuario">Cadastra Usuário</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="paginaCadastraUsuario">Cadastra Usuário</a></li>
+						<li><a href="#">Menu 1</a></li>
+						<li><a href="#">Menu 2</a></li>
 					</ul></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Sair</a></li>
+				<li><a href="/">Sair</a></li>
 			</ul>
 		</div>
 		<!--/.nav-collapse -->
