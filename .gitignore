@@ -12,3 +12,7 @@ bin/
 rebel.xml
 .mvn*
 mvnw*
+
+git rm --cached target/
+git rm --cached .settings
+git rm --cached .classpath
