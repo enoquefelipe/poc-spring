@@ -7,7 +7,6 @@ Servers/*
 .project
 target/
 bin/
-rebel.xml
 .mvn*
 mvnw*
 
