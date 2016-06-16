@@ -1,5 +1,3 @@
-/spring-maven/
-
 *.class
 .DS_Store
 Servers/*
