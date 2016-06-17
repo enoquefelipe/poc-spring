@@ -14,7 +14,7 @@
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="olaMundo">Olá Mundo</a></li>
-						<li><a href="cadastraUsuario">Cadastra Usuário</a></li>
+						<li><a href="listar">Gestao de Pessoas</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="#">Menu 1</a></li>
 						<li><a href="#">Menu 2</a></li>

@@ -17,9 +17,13 @@
 	</definition>
 
 	<definition name="cadastra-usuario" extends="new.definition">
-		<put-attribute name="title" value="Cadastra de Usuario" />
-		<put-attribute name="body"
-			value="/WEB-INF/views/cadastra-usuario.jsp" />
+		<put-attribute name="title" value="Cadastra de Usuário" />
+		<put-attribute name="body" value="/WEB-INF/views/cadastra-usuario.jsp" />
+	</definition>
+
+	<definition name="lista-usuario" extends="new.definition">
+		<put-attribute name="title" value="Lista Usuários" />
+		<put-attribute name="body" value="/WEB-INF/views/lista-usuario.jsp" />
 	</definition>
 
 	<definition name="sucesso" extends="new.definition">

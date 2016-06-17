@@ -16,14 +16,14 @@
 
 			<div class="form-group">
 				<label for="rg" class="col-sm-2 control-label">RG</label>
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<input name="rg" class="form-control" id="rg" placeholder="RG..." required="required">
 				</div>
 			</div>
 
 			<div class="form-group">
 				<label for="cpf" class="col-sm-2 control-label">CPF</label>
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<input name="cpf" class="form-control" id="cpf" placeholder="CPF..." required="required">
 				</div>
 			</div>
