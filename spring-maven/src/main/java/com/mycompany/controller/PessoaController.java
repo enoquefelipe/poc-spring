@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.mycompany.dao.PessoaDao;
+import com.mycompany.dao.impl.PessoaDao;
 import com.mycompany.entity.Pessoa;
 
 /**

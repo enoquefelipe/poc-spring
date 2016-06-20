@@ -1,8 +1,9 @@
-package com.mycompany.dao;
+package com.mycompany.dao.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mycompany.dao.Dao;
 import com.mycompany.entity.Pessoa;
 
 /**
