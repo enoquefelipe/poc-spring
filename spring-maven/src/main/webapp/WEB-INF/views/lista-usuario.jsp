@@ -33,7 +33,6 @@
 					<td>${pessoa.rg}</td>
 					<td>${pessoa.cpf}</td>
 					<td>${pessoa.nascimento}</td>
-					<td>
 				</tr>
 			</c:forEach>
 

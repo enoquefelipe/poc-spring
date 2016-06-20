@@ -1,12 +1,12 @@
 package com.mycompany.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.mycompany.dao.PessoaDao;
 import com.mycompany.entity.Pessoa;
 
 /**
@@ -15,7 +15,8 @@ import com.mycompany.entity.Pessoa;
  *
  */
 @Controller
-public class OlaMundoController {
+public class PessoaController {
+	private List<Pessoa> pessoas;
 
 	@RequestMapping("/index")
 	public String index() {
@@ -33,17 +34,16 @@ public class OlaMundoController {
 	}
 
 	@RequestMapping("/cadastrar")
-	public ModelAndView cadastrar(Pessoa pessoa) {
-		List<Pessoa> pessoas = new ArrayList<Pessoa>();
-		pessoas.add(pessoa);
-		ModelAndView mv = new ModelAndView("lista-usuario");
-		mv.addObject("pessoas", pessoas);
-		return mv;
+	public String cadastrar(Pessoa pessoa) {
+		PessoaDao dao = new PessoaDao();
+		dao.cadastrar(pessoa);
+		return "redirect:listar";
 	}
 
 	@RequestMapping("/listar")
 	public ModelAndView listarUsuario() {
-		List<Pessoa> pessoas = new ArrayList<Pessoa>();
+		PessoaDao dao = new PessoaDao();
+		pessoas = dao.listar();
 		ModelAndView mv = new ModelAndView("lista-usuario");
 		mv.addObject("pessoas", pessoas);
 		return mv;
