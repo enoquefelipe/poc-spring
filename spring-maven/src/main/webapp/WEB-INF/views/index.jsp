@@ -8,7 +8,7 @@
 <title>Index</title>
 </head>
 <body>
-	<div class="container">
+
 		<div class="jumbotron">
 			<h1>Welcome</h1>
 			<p>Welcome to aplication with Spring Web MVC.</p>
@@ -16,6 +16,6 @@
 				<a class="btn btn-primary btn-lg" href="index">Começar</a>
 			</p>
 		</div>
-	</div>
+
 </body>
 </html>

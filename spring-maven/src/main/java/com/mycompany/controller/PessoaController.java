@@ -30,7 +30,7 @@ public class PessoaController {
 
 	@RequestMapping("/cadastraUsuario")
 	public String cadastraUsuario() {
-		return "cadastra-usuario";
+		return "usuarios/cadastrar";
 	}
 
 	@RequestMapping("/cadastrar")
@@ -44,7 +44,7 @@ public class PessoaController {
 	public ModelAndView listarUsuario() {
 		PessoaDao dao = new PessoaDao();
 		pessoas = dao.listar();
-		ModelAndView mv = new ModelAndView("lista-usuario");
+		ModelAndView mv = new ModelAndView("usuarios/listar");
 		mv.addObject("pessoas", pessoas);
 		return mv;
 	}
