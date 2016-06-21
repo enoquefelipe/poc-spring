@@ -15,21 +15,11 @@ import com.mycompany.model.Pessoa;
  *
  */
 @Controller
-public class PessoaController {
+public class UsuarioController {
 	private List<Pessoa> pessoas;
 
-	@RequestMapping("/index")
-	public String index() {
-		return "index";
-	}
-
-	@RequestMapping("/olaMundo")
-	public String olaMundo() {
-		return "sucesso";
-	}
-
-	@RequestMapping("/cadastraUsuario")
-	public String cadastraUsuario() {
+	@RequestMapping("/cadastra-usuario-form")
+	public String cadastrar() {
 		return "usuarios/cadastrar";
 	}
 
@@ -41,7 +31,7 @@ public class PessoaController {
 	}
 
 	@RequestMapping("/listar")
-	public ModelAndView listarUsuario() {
+	public ModelAndView listar() {
 		PessoaDao dao = new PessoaDao();
 		pessoas = dao.listar();
 		ModelAndView mv = new ModelAndView("usuarios/listar");

@@ -13,7 +13,7 @@
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a href="cadastraUsuario" class="btn btn-default navbar-btn" title="Adicionar pessoa"> <span class="glyphicon glyphicon-plus"
+					<a href="cadastra-usuario-form" class="btn btn-default navbar-btn" title="Adicionar pessoa"> <span class="glyphicon glyphicon-plus"
 						aria-hidden="true"></span></a>
 				</div>
 			</div>
