@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.mycompany.dao.Dao;
-import com.mycompany.entity.Pessoa;
+import com.mycompany.model.Pessoa;
 
 /**
  * 
