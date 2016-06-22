@@ -3,3 +3,16 @@
 .center {
 	text-align: center;;
 }
+
+#index {
+	padding: 10px;
+	margin: 10px;
+}
+
+#endereco {
+	display: none;
+}
+
+#contato {
+	display: none;
+}
