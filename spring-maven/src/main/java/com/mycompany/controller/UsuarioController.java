@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mycompany.dao.impl.PessoaDao;
 import com.mycompany.model.Pessoa;
@@ -18,19 +20,20 @@ import com.mycompany.model.Pessoa;
 public class UsuarioController {
 	private List<Pessoa> pessoas;
 
-	@RequestMapping("/cadastra-usuario-form")
+	@RequestMapping(value = "/cadastrar", method = RequestMethod.GET)
 	public String cadastrar() {
 		return "usuarios/cadastrar";
 	}
 
-	@RequestMapping("/cadastrar")
-	public String cadastrar(Pessoa pessoa) {
+	@RequestMapping(value = "/cadastrar", method = RequestMethod.POST)
+	public ModelAndView cadastrar(Pessoa pessoa, RedirectAttributes redirectAttributes) {
 		PessoaDao dao = new PessoaDao();
 		dao.cadastrar(pessoa);
-		return "redirect:listar";
+		redirectAttributes.addFlashAttribute("message", "Registro gravado com sucesso");
+		return new ModelAndView("redirect:listar");
 	}
 
-	@RequestMapping("/listar")
+	@RequestMapping(value = "/listar", method = RequestMethod.GET)
 	public ModelAndView listar() {
 		PessoaDao dao = new PessoaDao();
 		pessoas = dao.listar();

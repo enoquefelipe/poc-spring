@@ -32,6 +32,13 @@ public class PessoaDao implements Dao<Pessoa> {
 	 */
 	@Override
 	public List<Pessoa> listar() {
+		
+		Pessoa p = new Pessoa();
+		p.setNome("Enoque");
+		p.setRg("1121212");
+		p.setCpf("000.000.000-9");
+		p.setNascimento("01/02/1980");
+		pessoas.add(p);
 		return pessoas;
 	}
 
