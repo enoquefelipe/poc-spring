@@ -28,17 +28,20 @@ public class PessoaDao implements Dao<Pessoa> {
 	/*
 	 * (non-Javadoc)
 	 * 
+	 * @see com.mycompany.dao.Dao#editar(java.lang.Object)
+	 */
+	@Override
+	public void editar(Pessoa pessoa) {
+		pessoas.add(pessoa);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.mycompany.dao.Dao#listar()
 	 */
 	@Override
 	public List<Pessoa> listar() {
-		
-		Pessoa p = new Pessoa();
-		p.setNome("Enoque");
-		p.setRg("1121212");
-		p.setCpf("000.000.000-9");
-		p.setNascimento("01/02/1980");
-		pessoas.add(p);
 		return pessoas;
 	}
 
@@ -50,16 +53,6 @@ public class PessoaDao implements Dao<Pessoa> {
 	@Override
 	public void remover(Pessoa pessoa) {
 		pessoas.remove(pessoa);
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.mycompany.dao.Dao#editar(java.lang.Object)
-	 */
-	@Override
-	public void editar(Pessoa pessoa) {
-		pessoas.add(pessoa);
 	}
 
 }
