@@ -17,6 +17,6 @@
 	display: none;
 }
 
-#message{
-	display: none;
+#message {
+	font-weight: bold;
 }

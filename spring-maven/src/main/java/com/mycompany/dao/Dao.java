@@ -1,5 +1,6 @@
 package com.mycompany.dao;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -14,8 +15,9 @@ public interface Dao<T> {
 	 * Método responsável por salvar os registros
 	 * 
 	 * @param Object
+	 * @throws SQLException 
 	 */
-	public void cadastrar(T t);
+	public void cadastrar(T t) throws SQLException;
 
 	/**
 	 * 

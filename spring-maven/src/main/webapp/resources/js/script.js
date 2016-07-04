@@ -36,3 +36,11 @@ $(document).ready(function() {
 	});
 
 });
+
+if (!$('#message').is(':empty')) {
+	$('#message').css('display', 'block');
+	$('#message').addClass('alert alert-info');
+} else {
+	$('#message').css('display', 'none');
+	$('#message').removeClass('alert alert-info');
+}

@@ -1,5 +1,6 @@
 package com.mycompany.controller;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -28,7 +29,12 @@ public class UsuarioController {
 	@RequestMapping(value = "/cadastrar", method = RequestMethod.POST)
 	public ModelAndView cadastrar(Pessoa pessoa, RedirectAttributes redirectAttributes) {
 		PessoaDao dao = new PessoaDao();
-		dao.cadastrar(pessoa);
+		try {
+			dao.cadastrar(pessoa);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		redirectAttributes.addFlashAttribute("message", "Registro gravado com sucesso");
 		return new ModelAndView("redirect:listar");
 	}
