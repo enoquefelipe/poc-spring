@@ -1,5 +1,9 @@
 package com.mycompany.model;
 
+import java.util.Calendar;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 /**
  * 
  * @author Enoque Felipe
@@ -10,13 +14,14 @@ public class Pessoa {
 	private String nome;
 	private String rg;
 	private String cpf;
-	private String nascimento;
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	private Calendar nascimento;
 
 	public String getCpf() {
 		return cpf;
 	}
 
-	public String getNascimento() {
+	public Calendar getNascimento() {
 		return nascimento;
 	}
 
@@ -32,7 +37,7 @@ public class Pessoa {
 		this.cpf = cpf;
 	}
 
-	public void setNascimento(String nascimento) {
+	public void setNascimento(Calendar nascimento) {
 		this.nascimento = nascimento;
 	}
 
@@ -43,5 +48,4 @@ public class Pessoa {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-
 }

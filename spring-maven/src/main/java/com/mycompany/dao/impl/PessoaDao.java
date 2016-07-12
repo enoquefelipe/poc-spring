@@ -2,6 +2,7 @@ package com.mycompany.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -36,16 +37,13 @@ public class PessoaDao implements Dao<Pessoa> {
 			stmt.setString(1, pessoa.getCpf());
 			stmt.setString(2, pessoa.getNome());
 			stmt.setString(3, pessoa.getRg());
-			stmt.setDate(4, new java.sql.Date(Calendar.getInstance().getTimeInMillis()));
+			stmt.setDate(4, new java.sql.Date(pessoa.getNascimento().getTimeInMillis()));
 			stmt.execute();
-			System.out.println("Gravado...");
 		} catch (Exception e) {
 			System.out.println(e);
 		} finally {
 			connection.close();
 		}
-
-		// pessoas.add(pessoa);
 	}
 
 	/*
@@ -64,7 +62,30 @@ public class PessoaDao implements Dao<Pessoa> {
 	 * @see com.mycompany.dao.Dao#listar()
 	 */
 	@Override
-	public List<Pessoa> listar() {
+	public List<Pessoa> listar() throws SQLException {
+
+		try {
+			connection = new ConnectionFactory().getConnection();
+			PreparedStatement stmt = connection.prepareStatement("select * from pessoas");
+
+			ResultSet rs = stmt.executeQuery();
+
+			while (rs.next()) {
+				Pessoa pessoa = new Pessoa();
+				pessoa.setNome(rs.getString("nome"));
+				pessoa.setCpf(rs.getString("cpf"));
+				pessoa.setRg(rs.getString("rg"));
+				Calendar data = Calendar.getInstance();
+				data.setTime(rs.getDate("nascimento"));
+				pessoa.setNascimento(data);
+				pessoas.add(pessoa);
+			}
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		} finally {
+			connection.close();
+		}
+
 		return pessoas;
 	}
 

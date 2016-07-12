@@ -31,9 +31,9 @@
 			<c:forEach items="${pessoas}" var="pessoa">
 				<tr>
 					<td>${pessoa.nome}</td>
-					<td>${pessoa.rg}</td>
-					<td>${pessoa.cpf}</td>
-					<td>${pessoa.nascimento}</td>
+					<td class="center">${pessoa.rg}</td>
+					<td class="center">${pessoa.cpf}</td>
+					<td class="center"><fmt:formatDate pattern="dd/MM/yyyy" value="${pessoa.nascimento.time}"/></td>
 				</tr>
 			</c:forEach>
 

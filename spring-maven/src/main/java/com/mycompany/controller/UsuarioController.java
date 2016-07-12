@@ -31,18 +31,22 @@ public class UsuarioController {
 		PessoaDao dao = new PessoaDao();
 		try {
 			dao.cadastrar(pessoa);
+			redirectAttributes.addFlashAttribute("message", "Registro gravado com sucesso!");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+			redirectAttributes.addFlashAttribute("message", "Falha ao gravar o registro!");
 		}
-		redirectAttributes.addFlashAttribute("message", "Registro gravado com sucesso");
 		return new ModelAndView("redirect:listar");
 	}
 
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
 	public ModelAndView listar() {
 		PessoaDao dao = new PessoaDao();
-		pessoas = dao.listar();
+		try {
+			pessoas = dao.listar();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		ModelAndView mv = new ModelAndView("usuarios/listar");
 		mv.addObject("pessoas", pessoas);
 		return mv;
