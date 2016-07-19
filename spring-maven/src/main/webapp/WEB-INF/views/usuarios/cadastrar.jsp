@@ -1,7 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
-	<li role="presentation" class="active"><a href="#user" aria-controls="user" role="tab" data-toggle="tab">Usu·rio</a></li>
-	<li role="presentation"><a href="#address" aria-controls="address" role="tab" data-toggle="tab">EndereÁo</a></li>
+	<li role="presentation" class="active"><a href="#user" aria-controls="user" role="tab" data-toggle="tab">Usu√°rio</a></li>
+	<li role="presentation"><a href="#address" aria-controls="address" role="tab" data-toggle="tab">Endere√ßo</a></li>
 	<li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contato</a></li>
 </ul>
 
@@ -14,7 +15,7 @@
 
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<b>Usu·rio</b>
+					<b>Usu√°rio</b>
 				</div>
 				<div class="panel-body">
 
@@ -68,7 +69,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="form-horizontal">
-						<b>EndereÁo</b>
+						<b>Endere√ßo</b>
 					</div>
 				</div>
 				<div class="panel-body">
@@ -166,11 +167,9 @@
 
 
 
-
-
 <ul class="nav nav-tabs">
-	<li role="presentation" class="active" id="menu-usuario"><a href="#usuario">Usu·rio</a></li>
-	<li role="presentation" class="" id="menu-endereco"><a href="#endereco">EndereÁo</a></li>
+	<li role="presentation" class="active" id="menu-usuario"><a href="#usuario">Usu√°rio</a></li>
+	<li role="presentation" class="" id="menu-endereco"><a href="#endereco">Endere√ßo</a></li>
 	<li role="presentation" class="" id="menu-contato"><a href="#contato">Contato</a></li>
 </ul>
 
@@ -211,7 +210,3 @@
 		</div>
 	</div>
 </div>
-
-
-
-

@@ -32,9 +32,9 @@ public interface Dao<T> {
 	 * Método responsável por buscar uma lista de registros
 	 * 
 	 * @return List<Object>
-	 * @throws SQLException 
+	 * @throws Exception 
 	 */
-	public List<T> listar() throws SQLException;
+	public List<T> listar() throws Exception;
 
 	/**
 	 * 

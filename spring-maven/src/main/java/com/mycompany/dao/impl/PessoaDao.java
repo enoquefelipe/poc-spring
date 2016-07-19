@@ -63,7 +63,6 @@ public class PessoaDao implements Dao<Pessoa> {
 	 */
 	@Override
 	public List<Pessoa> listar() throws SQLException {
-
 		try {
 			connection = new ConnectionFactory().getConnection();
 			PreparedStatement stmt = connection.prepareStatement("select * from pessoas");
@@ -80,12 +79,13 @@ public class PessoaDao implements Dao<Pessoa> {
 				pessoa.setNascimento(data);
 				pessoas.add(pessoa);
 			}
-		} catch (SQLException e) {
-			System.out.println(e.getMessage());
+		} catch (Exception e) {
+			throw e;
 		} finally {
-			connection.close();
+			if (connection != null){
+				connection.close();
+			}
 		}
-
 		return pessoas;
 	}
 

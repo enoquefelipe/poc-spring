@@ -40,14 +40,17 @@ public class UsuarioController {
 	}
 
 	@RequestMapping(value = "/listar", method = RequestMethod.GET)
-	public ModelAndView listar() {
+	public ModelAndView listar(RedirectAttributes redirectAttributes) {
 		PessoaDao dao = new PessoaDao();
+		ModelAndView mv = new ModelAndView("usuarios/listar");
 		try {
 			pessoas = dao.listar();
-		} catch (SQLException e) {
-			e.printStackTrace();
+			if (pessoas.isEmpty()) {
+				mv.addObject("message", "Nenhum registro encontrado!");
+			}
+		} catch (Exception e) {
+			mv.addObject("message", "Erro ao consultar os registros, descrição: " + e.getMessage());
 		}
-		ModelAndView mv = new ModelAndView("usuarios/listar");
 		mv.addObject("pessoas", pessoas);
 		return mv;
 	}
