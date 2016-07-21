@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns="http://java.sun.com/xml/ns/javaee" 
 	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	version="2.5">
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 
 	<display-name>spring-maven</display-name>
 
@@ -17,7 +16,7 @@
 		<servlet-name>springmvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.png</url-pattern>
@@ -25,9 +24,8 @@
 		<url-pattern>*.css</url-pattern>
 	</servlet-mapping>
 
-	<!-- -->
 	<welcome-file-list>
-	<welcome-file>/WEB-INF/views/index.jsp</welcome-file> 
+		<welcome-file>/WEB-INF/views/index.jsp</welcome-file>
 	</welcome-file-list>
- 	
+
 </web-app>
