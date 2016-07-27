@@ -49,7 +49,8 @@ public class UsuarioController {
 				mv.addObject("message", "Nenhum registro encontrado!");
 			}
 		} catch (Exception e) {
-			mv.addObject("message", "Erro ao consultar os registros, descrição: " + e.getMessage());
+//			mv.addObject("message", "Erro ao consultar os registros, descrição: " + e.getMessage());
+			mv.addObject("message", "{mensagem.erro}: " + e.getMessage());
 		}
 		mv.addObject("pessoas", pessoas);
 		return mv;

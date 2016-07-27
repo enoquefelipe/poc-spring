@@ -15,7 +15,7 @@
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a href="cadastrar" class="btn btn-default navbar-btn" title="Cadastrar pessoa">Cadastrar</a>
+					<a href="cadastrar" class="btn btn-default navbar-btn" title="Cadastrar pessoa">Novo</a>
 				</div>
 			</div>
 		</nav>

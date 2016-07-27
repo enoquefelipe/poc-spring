@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
+<form action="cadastrar" method="POST">
 	<div role="tabpanel" class="tab-pane active" id="user">
 
 		<div class="panel panel-default">
@@ -150,6 +151,7 @@
 		<button type="submit" class="btn btn-primary">Enviar</button>
 	</div>
 
+</form>
 
 <!-- 
 <ul class="nav nav-tabs" role="tablist">
