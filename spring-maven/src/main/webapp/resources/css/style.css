@@ -5,6 +5,7 @@
 }
 
 #index {
+	
 }
 
 #endereco {
@@ -17,4 +18,10 @@
 
 #message {
 	font-weight: bold;
+	font-family: glyphicons
+}
+
+@font-face {
+	font-family: glyphicons;
+	src: url(../fonts/glyphicons-halflings-regular.ttf);
 }

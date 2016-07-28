@@ -12,16 +12,15 @@
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<!-- Rastreia as anotacoes encontradas -->
-	
 	<context:component-scan base-package="com.mycompany.controller" />
 	<mvc:annotation-driven/>
 	
 	<!-- 
-		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>  
 		<property name="prefix" value="/WEB-INF/views/" /> 
 		<property name="suffix" value=".jsp" /> 
-		</bean>
+	</bean>
 	-->
 
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -29,6 +28,7 @@
 			<value>org.springframework.web.servlet.view.tiles2.TilesView</value>
 		</property>
 	</bean>	
+	
 	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
 		<property name="definitions">
 			<list>
@@ -36,4 +36,5 @@
 			</list>
 		</property>
 	</bean>
+	
 </beans>

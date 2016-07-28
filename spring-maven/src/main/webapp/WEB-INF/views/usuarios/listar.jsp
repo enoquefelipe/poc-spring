@@ -26,6 +26,7 @@
 				<th class="center">RG</th>
 				<th class="center">CPF</th>
 				<th class="center">Data</th>
+				<th class="center">Ações</th>
 			</tr>
 
 			<c:forEach items="${pessoas}" var="pessoa">
@@ -34,6 +35,11 @@
 					<td class="center">${pessoa.rg}</td>
 					<td class="center">${pessoa.cpf}</td>
 					<td class="center"><fmt:formatDate pattern="dd/MM/yyyy" value="${pessoa.nascimento.time}"/></td>
+					<td class="center">
+						<a href="#" title="Editar">Editar</a> 
+						<span>|</span> 
+						<a href="#" title="Excluir">Excluir</a>
+					</td>
 				</tr>
 			</c:forEach>
 
