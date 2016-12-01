@@ -1,5 +1,3 @@
-#spring-web-mvc-maven
-
 This project use Spring Web MVC:
 =====================================================
 
