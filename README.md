@@ -1,5 +1,7 @@
-This project use Spring Web MVC:
+spring-webmvc
 =====================================================
+
+This project use the Technologies:
 
 Spring:    3.2.X
 
