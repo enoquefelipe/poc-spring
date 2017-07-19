@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="new.definition" template="/WEB-INF/views/template/master.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/template/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="new.definition">
+		<put-attribute name="title" value="Index" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+
+	<definition name="usuarios/cadastrar" extends="new.definition">
+		<put-attribute name="title" value="Cadastra de Usuário" />
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/cadastrar.jsp" />
+	</definition>
+
+	<definition name="usuarios/listar" extends="new.definition">
+		<put-attribute name="title" value="Lista Usuários" />
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/listar.jsp" />
+	</definition>
+
+	<definition name="sucesso" extends="new.definition">
+		<put-attribute name="title" value="Sucesso" />
+		<put-attribute name="body" value="/WEB-INF/views/sucesso.jsp" />
+	</definition>
+
+	<definition name="master" extends="new.definition">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="body" value="/WEB-INF/views/template/master.jsp" />
+	</definition>
+
+</tiles-definitions>	
