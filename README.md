@@ -1,5 +1,4 @@
 # Study project using Spring web MVC
-
 =====================================================
 
 ## Technologies stack:
