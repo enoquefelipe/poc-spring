@@ -1,6 +1,5 @@
-# Study project using Spring web MVC
+Study project using Spring web MVC
 =====================================================
-
 ## Technologies stack:
 
 * Spring:    3.2.X
