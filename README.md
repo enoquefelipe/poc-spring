@@ -1,4 +1,5 @@
-spring-webmvc
+POC - Spring web MVC
+
 =====================================================
 
 This project use the Technologies:
