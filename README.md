@@ -1,14 +1,14 @@
-POC - Spring web MVC
+# Study project using Spring web MVC
 
 =====================================================
 
-This project use the Technologies:
+## Technologies stack:
 
-Spring:    3.2.X
+* Spring:    3.2.X
 
-Tiles:     2.1.X
+* Tiles:     2.1.X
 
-Log4J:     1.2.X
+* Log4J:     1.2.X
 
-Bootstrap: 3.2.X
+* Bootstrap: 3.2.X
 
